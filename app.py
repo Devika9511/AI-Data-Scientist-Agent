@@ -52,19 +52,19 @@ with st.sidebar:
     if os.path.exists(avatar_path):
         st.image(avatar_path, width=170)
     else:
-        st.warning("⚠️ Avatar not found — ensure assets/avatar.png is in the repository")
-
-    else:
         st.markdown(
             "<div style='width:170px;height:170px;border-radius:50%;background:linear-gradient(90deg,#17a2ff,#6b2cff);margin:12px auto;box-shadow:0 12px 40px rgba(23,162,255,0.08)'></div>",
             unsafe_allow_html=True,
         )
+
     st.markdown("<div class='aria-name'>Devika</div>", unsafe_allow_html=True)
     st.markdown("<div class='aria-role'>AI Data Scientist Agent </div>", unsafe_allow_html=True)
     st.markdown("---")
+
     st.markdown("### 📂 Upload")
     uploaded_file = st.file_uploader("Upload CSV / Excel", type=["csv", "xlsx", "xls"])
     st.markdown("---")
+
     st.markdown("### ⚙ Options")
     enable_llm = st.checkbox("Enable LLM insights (optional)")
     llm_api_key = None
@@ -74,6 +74,7 @@ with st.sidebar:
 
     st.markdown("### 🚀 Run")
     run_button = st.button("Run AutoML", key="run_main")
+
 st.markdown("<h1 style='margin:6px 0 6px 0;color:#dff9ff;'>Devika — AI Data Scientist Agent</h1>", unsafe_allow_html=True)
 st.markdown("<div style='color:#9fbcd8;margin-bottom:12px;'>Automated EDA · AutoML · Explainability</div>", unsafe_allow_html=True)
 
