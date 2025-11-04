@@ -14,9 +14,7 @@ This is an interactive **Data Analytics Dashboard** built using **Python & Strea
 ---
 
 ## 🚀 Live Demo
-🔗 *(Add your Streamlit deployment link here after hosting)*  
-Example:  
-`https://your-app-name.streamlit.app`
+https://ai-data-scientist-agent-4axnnnw7m7schphah2qrnz.streamlit.app/
 
 ---
 
