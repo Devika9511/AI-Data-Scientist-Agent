@@ -47,9 +47,13 @@ st.markdown(
 
 # ---------- Sidebar (centered avatar) ----------
 with st.sidebar:
-    avatar_path = os.path.join("assets", "avatar.png")
+    avatar_path = "assets/avatar.png"  # ✅ relative path for deployment
+
     if os.path.exists(avatar_path):
         st.image(avatar_path, width=170)
+    else:
+        st.warning("⚠️ Avatar not found — ensure assets/avatar.png is in the repository")
+
     else:
         st.markdown(
             "<div style='width:170px;height:170px;border-radius:50%;background:linear-gradient(90deg,#17a2ff,#6b2cff);margin:12px auto;box-shadow:0 12px 40px rgba(23,162,255,0.08)'></div>",
