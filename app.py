@@ -46,9 +46,9 @@ st.markdown(
 )
 
 # ---------- Sidebar (centered avatar) ----------
+# ---------- Sidebar (centered avatar) ----------
 with st.sidebar:
-    avatar_path = "assets/avatar.png"  # ✅ relative path for deployment
-
+    avatar_path = "assets/avatar.png"
     if os.path.exists(avatar_path):
         st.image(avatar_path, width=170)
     else:
@@ -74,6 +74,7 @@ with st.sidebar:
 
     st.markdown("### 🚀 Run")
     run_button = st.button("Run AutoML", key="run_main")
+
 
 st.markdown("<h1 style='margin:6px 0 6px 0;color:#dff9ff;'>Devika — AI Data Scientist Agent</h1>", unsafe_allow_html=True)
 st.markdown("<div style='color:#9fbcd8;margin-bottom:12px;'>Automated EDA · AutoML · Explainability</div>", unsafe_allow_html=True)
